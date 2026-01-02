@@ -1,0 +1,67 @@
+:root {
+  --hp-primary: #740001; /* Gryffindor Red */
+  --hp-secondary: #D3A625; /* Gryffindor Gold */
+  --hp-dark: #1a1a1a;
+  --hp-light: #f5f5f0; /* Parchment */
+  --hp-accent: #222f5b; /* Ravenclaw Blue */
+  --hp-font-heading: 'Cinzel', serif;
+  --hp-font-body: 'Crimson Text', serif;
+  --hp-overlay: rgba(0, 0, 0, 0.7);
+}
+
+body {
+  background-color: var(--hp-dark);
+  color: var(--hp-light);
+  font-family: var(--hp-font-body);
+  margin: 0;
+  padding: 0;
+  background-image: url('https://www.transparenttextures.com/patterns/aged-paper.png'); /* Subtle texture */
+}
+
+h1, h2, h3, button {
+  font-family: var(--hp-font-heading);
+}
+
+.hp-btn {
+  background-color: var(--hp-primary);
+  color: var(--hp-secondary);
+  border: 2px solid var(--hp-secondary);
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
+
+.hp-btn:hover {
+  background-color: var(--hp-secondary);
+  color: var(--hp-primary);
+  box-shadow: 0 0 15px var(--hp-secondary);
+}
+
+.hp-input {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--hp-secondary);
+  color: var(--hp-light);
+  padding: 10px;
+  border-radius: 5px;
+  width: 400px ;
+  margin-bottom: 15px;
+  font-family: var(--hp-font-body);
+  font-size: 1rem;
+}
+
+.hp-input::placeholder {
+  color: rgba(245, 245, 240, 0.6);
+}
+
+.hp-card {
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid var(--hp-secondary);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+}
